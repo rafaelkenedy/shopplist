@@ -19,9 +19,9 @@ A "shopping list" reminds you to buy various items
 
 -   [ ] Add items
 -   [ ] Remove Items
-<div width="600px">
-  ![example](example.gif?style=flat)
-</div>
+
+![example](example.gif?style=flat)
+
 
 ## ✨ Technologies 
 
