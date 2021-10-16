@@ -44,5 +44,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 <div align="center">
   <small>Desenvolvido por Rafael Kenedy - Outubro/2021</small>
 
-  [![Linkedin Badge](https://img.shields.io/badge/-Rodrigo%20Kenedt-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-kenedy-da-silva-alves-692973160/)](https://www.linkedin.com/in/rafael-kenedy/) 
+  [![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Kenedy-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-kenedy-da-silva-alves-692973160/)](https://www.linkedin.com/in/rafael-kenedy/) 
 </div>
