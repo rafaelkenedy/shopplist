@@ -20,12 +20,6 @@ A "shopping list" reminds you to buy various items
 -   [ ] Add items
 -   [ ] Remove Items
 
-<div align="center">
-  <img src="example.gif" style="width:300; margin-left: auto; margin-right: auto;"/>
-  
-</div>
-
-
 ## ✨ Technologies 
 
 -   [ ] React Native
@@ -36,6 +30,10 @@ A "shopping list" reminds you to buy various items
 
 Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
 Em seguida, inicie o projeto.
+
+<div align="center">
+  <img src="example.gif" style="width:300;"/>  
+</div>
 
 
 ## 📄 Licença
