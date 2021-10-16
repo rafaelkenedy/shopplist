@@ -1,7 +1,7 @@
 # shopplist
 
 <h1 align="center">
-  <img alt="ShoppingList" height="80" title="ShoppingList" src=".github/logo.png" />
+  <img alt="ShoppingList" height="80" title="ShoppingList" src="logo.png" />
 </h1>
 
 <p align="center">
