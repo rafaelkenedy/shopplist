@@ -21,7 +21,7 @@ A "shopping list" reminds you to buy various items
 -   [ ] Remove Items
 
 <div align="center">
-  <img src="example.gif" width="300" margin-left="300"/>
+  <img src="example.gif" style="width:300; margin-left: auto; margin-right: auto;"/>
   
 </div>
 
