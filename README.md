@@ -14,7 +14,7 @@
 ![cover](.github/cover.png?style=flat)
 
 
-## 💻 Projeto
+## 💻 Project
 A "shopping list" reminds you to buy various items
 
 ## :hammer_and_wrench: Features 
