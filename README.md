@@ -32,7 +32,7 @@ Utilize o **yarn** ou o **npm install** para instalar as dependências do projet
 Em seguida, inicie o projeto.
 
 <div align="center">
-  <img src="example.gif" style="width:300;"/>  
+  <img src="example.gif" width="300"/>  
 </div>
 
 
