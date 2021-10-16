@@ -23,7 +23,7 @@ A "shopping list" reminds you to buy various items
 ## ✨ Technologies 
 
 -   [ ] React Native
--   [ ] Typescript
+-   [ ] TypeScript
 
 
 ## Executando o projeto
