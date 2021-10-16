@@ -10,9 +10,7 @@
 
 </p>
 
-
 ![cover](.github/cover.png?style=flat)
-
 
 ## 💻 Project
 A "shopping list" reminds you to buy various items
