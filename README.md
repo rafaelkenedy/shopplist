@@ -21,7 +21,7 @@ A "shopping list" reminds you to buy various items
 -   [ ] Remove Items
 
 <div align="center">
-  ![example](https://user-images.githubusercontent.com/35613507/137595880-dc585ef0-6fdc-4064-8358-5e1fca1564f3.gif)
+  </br> ![example](example.gif?style=flat)
 </div>
 
 
