@@ -20,6 +20,8 @@ A "shopping list" reminds you to buy various items
 -   [ ] Add items
 -   [ ] Remove Items
 
+![example](example.gif?style=flat)
+
 
 ## ✨ Technologies 
 
