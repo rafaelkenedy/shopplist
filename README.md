@@ -18,7 +18,7 @@ A "shopping list" reminds you to buy various items
 ## :hammer_and_wrench: Features 
 
 -   [ ] Add items
--   [ ] Remove Items;
+-   [ ] Remove Items
 
 
 ## ✨ Technologies 
