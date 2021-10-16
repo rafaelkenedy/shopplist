@@ -20,7 +20,7 @@ A "shopping list" reminds you to buy various items
 -   [ ] Add items
 -   [ ] Remove Items
 <div align="center">
-  ![example](example.gif?style=flat)
+  [![example](example.gif?style=flat)]
 </div>
 
 
