@@ -16,11 +16,13 @@ interface ItemData{
     name: string
 }
 
-
 export function Home(){
 
     const [newItem, setNewItem] = useState('')
     const [myItems, setMyItems] = useState<ItemData[]>([])
+    
+
+
 
     function handleAddNewItem(){
         const data = {
@@ -29,9 +31,13 @@ export function Home(){
         }
         if(data.name.trim() === ''){
             Alert.alert('Item is empty!')
+        
         }else{
             setMyItems(oldState => [...oldState, data])
+            
         }
+        
+        setNewItem('')       
     }
 
     function handleRemoveItem(id: string){
@@ -51,7 +57,8 @@ export function Home(){
                 style={styles.input}
                 placeholder='Item...'
                 placeholderTextColor='#232F34'
-                onChangeText={setNewItem}
+                onChangeText={setNewItem}  
+                value={newItem}             
             />
 
             <Button 
