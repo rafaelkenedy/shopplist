@@ -1,44 +1,108 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import{
-    TouchableOpacity,
-    TouchableOpacityProps,
+    View,
     Text,
-    StyleSheet
-
+    StyleSheet,
+    TextInput,
+    Platform,
+    FlatList,
+    Alert
 } from 'react-native'
+import { Button } from '../components/Button'
+import { ItemCard } from '../components/ItemCard'
 
-interface ItemCardProps extends TouchableOpacityProps{
-    item: string
+interface ItemData{
+    id: string
+    name: string
 }
 
-export function ItemCard({item, ...rest} : ItemCardProps){
+export function Home(){
+
+    const [newItem, setNewItem] = useState('')
+    const [myItems, setMyItems] = useState<ItemData[]>([])
+    
+
+
+
+    function handleAddNewItem(){
+        const data = {
+            id: String(new Date().getTime()),
+            name: newItem.trim()
+        }
+        if(data.name.trim() === ''){
+            Alert.alert('Item is empty!')
+        
+        }else{
+            setMyItems(oldState => [...oldState, data])
+            
+        }
+        
+        setNewItem('')       
+    }
+
+    function handleRemoveItem(id: string){
+        setMyItems(oldState => oldState.filter(
+            item => item.id !== id
+        ))
+    }
 
     return(
-        <TouchableOpacity
-            style={styles.buttonItem}
-            activeOpacity={.7}
-            {...rest}
-        >
-            <Text style={styles.title}> 
-                {item}
+        <View style={styles.container}>
+
+            <Text style={styles.title}>
+                Welcome
             </Text>
-        </TouchableOpacity>
-    )
-}
 
+            <TextInput
+                style={styles.input}
+                placeholder='Item...'
+                placeholderTextColor='#232F34'
+                onChangeText={setNewItem}  
+                value={newItem}             
+            />
+
+            <Button 
+                title='Add'
+                onPress={handleAddNewItem}            
+            />
+
+            <Text style={[styles.title, { marginVertical: 32}]}>
+                My Items
+            </Text>
+
+            <FlatList 
+                data={myItems}
+                keyExtractor={item => item.id}
+                renderItem={({item}) =>(
+                    <ItemCard
+                        item={item.name}
+                        onPress={() => handleRemoveItem(item.id)}                    
+                    />
+                )}
+            />
+        </View>
+    )}
+    
 const styles = StyleSheet.create({
+        container:{
+            flex: 1,
+            backgroundColor: '#232F34',
+            paddingHorizontal: 24,
+            paddingVertical: 64
+        },
+        title:{
+            //color: '#F9AA33',
+            color: '#FFF',
+            fontSize: 18,
+            fontWeight: 'bold',
+        },
+        input:{
+            backgroundColor: '#4A6572',
+            fontSize: 18,
+            padding: 16,
+            marginTop: 20,
+            borderRadius: 7,
+            color: '#FFF'
 
-    buttonItem:{
-        backgroundColor: '#4A6572',
-        padding: 16,
-        borderRadius: 32,
-        marginVertical: 10,
-        alignItems: 'center'        
-    },
-    title:{
-        //color: '#F9AA33',
-        color: '#FFF',
-        fontSize: 18,
-        fontWeight: 'bold'
-    }
-})
+        }
+    })
